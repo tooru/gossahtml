@@ -1,4 +1,4 @@
-FROM golang:1.11.3-alpine3.8
+FROM golang:1.15.2-alpine3.12
 
 RUN apk add --no-cache git bash gcc libc-dev graphviz
 
