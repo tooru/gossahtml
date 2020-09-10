@@ -6,7 +6,7 @@ WORKDIR /root
 RUN git clone https://github.com/golang/go.git
 WORKDIR go/src
 
-ARG PATHSPEC=go1.12
+ARG PATHSPEC=go1.14
 
 ENV GOROOT_BOOTSTRAP=/usr/local/go
 RUN git checkout $PATHSPEC
