@@ -15,5 +15,5 @@ ENV PATH=/root/go/bin:$PATH
 COPY src/main.go /root/
 RUN apk add --no-cache graphviz
 
-ARG GOSSAFUNC=ssa
+ARG GOSSAFUNC=ssa:*
 RUN GOSSAFUNC=$GOSSAFUNC go build /root/main.go
