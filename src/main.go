@@ -19,6 +19,14 @@ func ssa() {
 	fmt.Printf("%d, %d\n", w, z)
 }
 
+func min(x, y int) int {
+	if x < y {
+		return x
+	}
+	return y
+}
+
 func main() {
 	ssa()
+	min(1, 2)
 }
